@@ -18,4 +18,4 @@ jobs:
 
     - name: Build
       working-directory: ${{github.workspace}}/build-script
-      run: run.bat
+      run: cmd.exe /c 'run.bat'
