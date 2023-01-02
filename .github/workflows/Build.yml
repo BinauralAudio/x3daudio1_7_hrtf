@@ -4,7 +4,6 @@ on:
   push
 
 env:
-  SOLUTION_FILE_PATH: x3daudio1_7.sln
   BUILD_CONFIGURATION: Release
 
 jobs:
@@ -22,5 +21,5 @@ jobs:
       run: nuget restore ${{env.SOLUTION_FILE_PATH}}
 
     - name: Build
-      working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: build-script/run.bat
+      working-directory: ${{env.GITHUB_WORKSPACE}}/build-script
+      run: run.bat
