@@ -17,5 +17,5 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Build
-      working-directory: ${{GITHUB_WORKSPACE}}/build-script
+      working-directory: ${{github.workspace}}/build-script
       run: run.bat
