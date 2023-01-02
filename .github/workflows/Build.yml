@@ -27,4 +27,4 @@ jobs:
         automatic_release_tag: "latest"
         prerelease: False
         title: "X3DAudio HRTF"
-        files: "${{github.workspace}}/final_package/*"
+        files: "final_package/*"
